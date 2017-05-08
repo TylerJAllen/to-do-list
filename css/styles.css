@@ -1,12 +1,20 @@
 body {
   background-color: #BEB7A4;
   color: #14281D;
+  background-image: url(http://i.ebayimg.com/images/i/400767792958-0-1/s-l1000.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+html,body {
+  height: 100%;
 }
 
 .container {
   margin-top: 10px;
   border-radius: 10px;
-  box-shadow: 2px 2px 8px black;
+  box-shadow: 0px 0px 8px black;
+  opacity: 0.9;
 }
 
 .navbar {
@@ -25,16 +33,15 @@ body {
 .tasks-header div:last-child {
   border-top-right-radius: 10px;
 }
-#task-input div:first-child {
+.left-col {
   border-bottom-left-radius: 10px;
 }
-#task-input div:last-child {
+.right-col {
   border-bottom-right-radius: 10px;
 }
 .tasks-header div:first-child, #task-input div:first-child {
   border-left: 3px solid #14281D;
 }
-
 .tasks-header div {
   border-top: 3px solid #14281D;
 }
@@ -67,25 +74,29 @@ body {
 }
 #input-form div button, #remove-task {
   background-color: #482728;
-  /*border: 1px solid #210001;*/
   border-radius: 10px;
   box-shadow: 0 0 4px black;
   color: #F0EBD8;
-}
-#input-form div button {
-  width: 100%;
 }
 #input-form div button:hover {
   background-color: #888;
 }
 .form-group {
   margin-bottom: 0;
+  margin-right: 10px;
 }
-.checkbox {
-  border: 100px solid black;
+.left-form-group {
+  width: 50%;
+}
+#date, #task {
+  width: 100%;
 }
 .left-col, .task div:last-child, .tasks-header div, #input-form div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#image {
+  text-align: center;
 }

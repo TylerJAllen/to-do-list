@@ -11,13 +11,19 @@
   <body>
     <nav class="navbar navbar-default">
       <a class="navbar-brand" href="#" id="brand">To-Do List</a>
+      <form id="input-form" class="form-inline">
+        <div class="form-group pull-right">
+          <button id="add-task" class="btn btn-default">Add</button>
+        </div>
+        <div class="form-group pull-right">
+          <input type="date" class="form-control" id="date" required>
+        </div>
+        <div class="form-group pull-right left-form-group">
+          <input type="text" class="form-control" id="task" maxlength="100" placeholder="Task info..." required>
+        </div>
+      </form>
     </nav>
     <div class="container">
-      <!-- <div class="row">
-        <div class="col-xs-12 text-center">
-          <h1>To-do List</h1>
-        </div>
-      </div> -->
       <div class="row tasks-header">
         <div class="col-xs-1">
           <button id="remove-task" class="btn btn-default">Remove<br><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
@@ -34,18 +40,11 @@
       </div>
       <!-- stuff gets inserted here -->
       <div class="row" id="task-input">
-        <form id="input-form">
-          <div class="col-xs-1 form-group">
-            <button id="add-task" class="btn btn-default">Add</button>
-          </div>
-          <div class="col-xs-9 form-group">
-            <input type="text" class="form-control" id="task" maxlength="100" required>
-          </div>
-          <div class="col-xs-2 form-group">
-            <input type="date" class="form-control" id="date" required>
-          </div>
-        </form>
+
       </div>
+    </div>
+    <div>
+      <!-- <img src="http://i.ebayimg.com/images/i/400767792958-0-1/s-l1000.jpg" class="center-block"/> -->
     </div>
   </body>
 </html>
