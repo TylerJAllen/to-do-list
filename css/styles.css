@@ -1,34 +1,76 @@
-.tasks-header div:first-child {
-  border-left: 2px solid black;
+body {
+  background-color: #BEB7A4;
+  color: #14281D;
 }
+
+.container {
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px black;
+}
+
+.navbar {
+  border-radius: 0;
+  background-color: #81726A;
+  border: none;
+  border-bottom: 3px solid #14281D;
+  box-shadow: 0 0 10px black;
+}
+#brand {
+  color: #F0EBD8;
+}
+.tasks-header div:first-child {
+  border-top-left-radius: 10px;
+}
+.tasks-header div:last-child {
+  border-top-right-radius: 10px;
+}
+#task-input div:first-child {
+  border-bottom-left-radius: 10px;
+}
+#task-input div:last-child {
+  border-bottom-right-radius: 10px;
+}
+.tasks-header div:first-child, #task-input div:first-child {
+  border-left: 3px solid #14281D;
+}
+
 .tasks-header div {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
-  background-color: #ccc;
+  border-top: 3px solid #14281D;
+}
+.tasks-header {
+  color: #F0EBD8;
+}
+.tasks-header div, #task-input div {
+  border-bottom: 3px solid #14281D;
+  border-right: 3px solid #14281D;
+  background-color: #81726A;
   height: 70px;
 }
 .task div:first-child {
-  border-left: 2px solid black;
+  border-left: 3px solid #14281D;
 }
 .task div {
   height: 50px;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
+  border-bottom: 3px solid #14281D;
+  border-right: 3px solid #14281D;
 }
 .task {
   word-wrap: break-word;
-  background-color: #eee;
+  background-color: #A5A5A5;
 }
 .task:nth-child(2n+1) {
-  background-color: #fff;
+  background-color: #A2A79E;
 }
 #input-form div input, #input-form div button, .task div * {
   margin: 10px 0;
 }
 #input-form div button, #remove-task {
-  background-color: black;
-  color: white;
+  background-color: #482728;
+  /*border: 1px solid #210001;*/
+  border-radius: 10px;
+  box-shadow: 0 0 4px black;
+  color: #F0EBD8;
 }
 #input-form div button {
   width: 100%;
@@ -38,6 +80,9 @@
 }
 .form-group {
   margin-bottom: 0;
+}
+.checkbox {
+  border: 100px solid black;
 }
 .left-col, .task div:last-child, .tasks-header div, #input-form div {
   display: flex;
