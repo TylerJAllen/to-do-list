@@ -1,0 +1,46 @@
+.tasks-header div:first-child {
+  border-left: 2px solid black;
+}
+.tasks-header div {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  background-color: #ccc;
+  height: 70px;
+}
+.task div:first-child {
+  border-left: 2px solid black;
+}
+.task div {
+  height: 50px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+.task {
+  word-wrap: break-word;
+  background-color: #eee;
+}
+.task:nth-child(2n+1) {
+  background-color: #fff;
+}
+#input-form div input, #input-form div button, .task div * {
+  margin: 10px 0;
+}
+#input-form div button, #remove-task {
+  background-color: black;
+  color: white;
+}
+#input-form div button {
+  width: 100%;
+}
+#input-form div button:hover {
+  background-color: #888;
+}
+.form-group {
+  margin-bottom: 0;
+}
+.left-col, .task div:last-child, .tasks-header div, #input-form div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

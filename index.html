@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row jumbotron">
+        <div class="col-xs-12 text-center">
+          <h1>To-do List</h1>
+        </div>
+      </div>
+      <div class="row tasks-header">
+        <div class="col-xs-1">
+          <button id="remove-task" class="btn btn-default">Remove<br><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+
+        </div>
+        <div class="col-xs-9">
+          <!-- task info -->
+          <h3>Task</h3>
+        </div>
+        <div class="col-xs-2">
+          <!-- due date -->
+          <h3>Due Date</h3>
+        </div>
+      </div>
+      <div class="row task">
+        <div class="col-xs-1 left-col">
+          <input type="checkbox" class="checkbox">
+        </div>
+        <div class="col-xs-9">
+          <h4>Laundryfsadlkjfhadsjkhfkajsdhfkjahsdjkfhadskljfhaklsdjhfkljadshfkljashfjklhsadfklhsakljhfklajdshfkljsa</h4>
+        </div>
+        <div class="col-xs-2">
+          <h4>5/9/17 9pm</h4>
+        </div>
+      </div>
+      <div class="row task" id="task-input">
+        <form id="input-form">
+          <div class="col-xs-1 form-group">
+            <button id="add-task" class="btn btn-default">Add</button>
+          </div>
+          <div class="col-xs-9 form-group">
+            <input type="text" class="form-control" id="task" maxlength="100" required>
+          </div>
+          <div class="col-xs-2 form-group">
+            <input type="date" class="form-control" id="date" required>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
